@@ -11,6 +11,8 @@ gem 'faker'
 
 gem 'capybara'
 
+gem 'devise'
+
 
 gem 'jquery-rails'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
