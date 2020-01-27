@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-  root to: 'users#new'
+  resources:users
+  root to: 'users#index'
   resources :products do
     resources :reviews, except: [:destroy]
   end

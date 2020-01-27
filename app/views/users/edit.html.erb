@@ -1,15 +1,7 @@
-<h1>New User</h1>
-
-<h1> Sign up</h1>
+<h1>Editing User</h1>
 
 
 <%= form_for @user do |f| %>
-
-<%= f.label "Profile Photo" %>
-<%= f.file_field :avatar %>
-
-
-
 
 <%= f.label "Email" %>
 <%= f.text_field :email %>
@@ -19,7 +11,10 @@
 <%= f.password_field :password_confirmation %>
 <%= f.label "Admin?" %>
 <%= f.check_box :admin %>
-<%= f.submit "Sign Up" %>
+<%= f.submit "Edit" %>
 <% end %>
 
+
+
+<%= link_to 'Show', @user %> |
 <%= link_to 'Back', users_path %>
