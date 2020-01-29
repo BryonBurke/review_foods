@@ -11,7 +11,7 @@
 
 <body>
 
-  <div class="container">
+
 
   <% if current_user %>
   <%= current_user.email %> | <%= link_to "Sign out", '/signout' %>
@@ -22,6 +22,6 @@
   <%= flash[:alert] %>
   <%= flash[:notice] %>
   <%= yield %>
-</div>
+
 </body>
 </html>
