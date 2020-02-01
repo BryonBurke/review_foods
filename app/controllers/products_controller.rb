@@ -1,5 +1,7 @@
 class ProductsController < ApplicationController
 
+  before_action :admin_authorize, only: [:edit, :update, :delete, :create]
+
 
 
 
