@@ -10,15 +10,24 @@
 </head>
 
 <body>
+  <div class="container">
+
   <% if current_user %>
   <%= current_user.email %> | <%= link_to "Sign out", '/signout' %>
   <% else %>
   <%= link_to "Sign up", 'signup' %> | <%= link_to "Sign in", '/signin' %>
   <% end %>
-  | <%= link_to 'Show', user_path(current_user) %>
+
 
   <%= flash[:alert] %>
   <%= flash[:notice] %>
   <%= yield %>
+</div>
+
+<center>
+<%= image_tag "marios_header.jpg" %>
+</center>
+
+
 </body>
 </html>

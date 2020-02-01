@@ -1,19 +1,41 @@
-<h1>Marios fine foods</h1>
-<h2>Foods of the world, shipped fresh</h2>
+
+
+<center>
+<%= image_tag "marios_header.jpg" %>
+</center>
 
 
 
 
-<% if @products.any? %>
-<ul>
-  <% @products.each do |product| %>
-  <li><%= link_to product.name, product_path(product) %></li>
-  <% end %>
-</ul>
-<% else %>
-<p>There are no products yet.</p>
-<% end %>
+
 
 
 
 <p><%= link_to "Create new product", new_product_path %></p>
+
+
+<div class="row">
+     <div class="col-md-4">
+       <div class="well">
+         <h2>Products</h2>
+         <% if @products.any? %>
+         <ul>
+           <% @products.each do |product| %>
+           <li><%= link_to product.name, product_path(product) %></li>
+           <% end %>
+         </ul>
+         <% else %>
+         <p>There are no products yet.</p>
+         <% end %>
+
+
+       </div>
+     </div>
+     <div class="col-md-8">
+       <div class="well">
+         <%= image_tag "de1-9.jpg" %>
+
+       </div>
+     </div>
+
+   </div>
