@@ -1,5 +1,5 @@
 Review Foods
-This program tracks projects and which volunteers are assigned to which projects
+This program displays the products of Mario's specialty foods and allows users to leave reviews.
 By Bryon Burke
 SPECIFICATIONS
 
