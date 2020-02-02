@@ -1,24 +1,37 @@
-# README
+Review Foods
+This program tracks projects and which volunteers are assigned to which projects
+By Bryon Burke
+SPECIFICATIONS
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+1. As an admin, I should be able to log in and log out of the application.
+2. As an admin, I should be able to add, update and delete products.
+3. As an admin, I should be able to add reviews.
+4. As an admin, I want to ensure that other users don't have access to CRUD functionality.
+5. As a user, I want to be able to create an account and add a review to a product. (A product can have many comments.) This is the only CRUD functionality a user can have.
 
-Things you may want to cover:
+Setup/Installation Requirements
+clone and open the file locally
+in terminal run:
+$git clone https://github.com/BryonBurke/review_foods
 
-* Ruby version
+in terminal run:
+  rake db:create
+  rake db:migrate
+  rake db:seed
+  rails s
+  open a browser and navigate to: localhost:3000
 
-* System dependencies
+Known Bugs
+No known bugs
 
-* Configuration
+Support and contact details
+_If you have any issues with the program or want to reach out, email bryonparis@gmail.com
 
-* Database creation
+Technologies Used
+This program utilized:
 
-* Database initialization
+RUBY and was built on Atom
+License
+Licensed under MIT license
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Copyright (c) 2019 Bryon Burke
